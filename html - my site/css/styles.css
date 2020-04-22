@@ -1,0 +1,41 @@
+/* CSS stylesheet
+*/
+/*****************Tag Selectors**************/
+body {
+        background-color: #fff6da;
+}
+h1 {
+      color:#042f4b;
+}
+h3 {
+      color:#ed1250;
+}
+h3:hover {
+      color:gold;
+}
+hr   {
+           height:0;
+           border-color:grey;
+           border-width:4px;
+           border-style: none;
+           border-top-style:dotted ;
+}
+/******************Class Selectors**********/
+
+.about {
+           color:#012f4b;
+}
+
+.job {
+           color:#012f4b;
+}
+
+.circular{
+            border-radius: 120px;
+}
+
+/******************Tag Selectors**********/
+
+#myname {
+        color: black;
+}
