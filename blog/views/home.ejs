@@ -5,13 +5,21 @@
     </div>
     <div class="">
       <p><%=homecont %></p>
+      <br>
+      <h4>
+        <a href="/compose">Compose Post</a>
+      </h4>
+      <br>
+      <h1>Posts</h1>
 
-      <% allposts.forEach(function(element) { %>
+      <% allposts.forEach(function(post) { %>
         <div class="post">
-          <h3><%= element['title']%></h3>
-          <p><%= element['content'].substring(0,100) + ' ...'%>
-            <a href="/posts/<%= element['title']%>">Read More</a>
-          </p>
+          <h3><%= post.title%></h3>
+          <%if (post.title !== "No posts yet..."){%>
+            <p><%= post.content.substring(0,100) + ' ...'%>
+              <a href="/posts/<%= post.title%>">Read More</a>
+            </p>
+          <%}%>
 
         </div>
       <%  }); %>

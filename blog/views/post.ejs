@@ -1,17 +1,15 @@
 <%- include("partials/header") -%>
 
     <div id = "heading" class="box">
-      <h1>Matched Posts</h1>
+      <%if (fpost.title !== "No posts found"){%>
+        <h1>Matched Post</h1>
+      <%}%>
     </div>
     <div class="">
-
-      <% found_posts.forEach(function(element) { %>
         <div class="post">
-          <h3><%= element['title']%></h3>
-          <p><%= element['content']%></p>
+          <h3><%= fpost.title%></h3>
+          <p><%= fpost.content%></p>
         </div>
-      <%  }); %>
-
     </div>
 
 

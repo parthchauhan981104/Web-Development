@@ -2,6 +2,12 @@ label{
   margin: 15px 0 5px 0;
 }
 
+body {
+  position: relative;
+  height: auto;
+  min-height: 100% !important;
+}
+
 .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
@@ -24,7 +30,7 @@ label{
 }
 
 .footer {
-	position: absolute;
+	position: fixed;
 	text-align: center;
 	bottom: 0;
 	width: 100%;
